@@ -1,13 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/content_back">
 
     <include layout="@layout/common_title_bar"/>
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_launcher"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
 
-    </ListView>
-</LinearLayout>
+    <TextView
+        android:id="@+id/about_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_launcher"
+        android:layout_marginTop="8dp"
+        android:text="version 1.0"
+        android:textSize="12sp"
+        android:textColor="@color/text_hard_gray"/>
+
+    <TextView
+        android:id="@+id/about_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/about_version"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:lineSpacingExtra="4dp"
+        android:text="作者：颜艺学长(黄帆)\n我是一个对移动研发，互联网\n新科技感兴趣的小白程序员"
+        android:textSize="12sp"
+        android:textColor="@color/text_light_gray"/>
+
+    <TextView
+        android:id="@+id/contact_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/about_me"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:lineSpacingExtra="4dp"
+        android:text="联系我\nGithub:http://github.com/vanhfsail\n主页:http://www.vanhfsail.site\n邮件:vanhfsail@foxmail.com"
+        android:textSize="12sp"
+        android:textColor="@color/text_light_gray"/>
+
+
+</RelativeLayout>

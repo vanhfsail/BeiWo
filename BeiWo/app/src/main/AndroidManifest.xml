@@ -65,6 +65,10 @@
             android:theme="@style/AppTheme"></activity>
 
         <activity
+            android:name="activity.AboutActivity"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
             android:name="com.mob.tools.MobUIShell"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:configChanges="keyboardHidden|orientation|screenSize"

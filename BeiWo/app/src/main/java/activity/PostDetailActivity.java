@@ -235,7 +235,7 @@ public class PostDetailActivity extends BaseActivity implements View.OnClickList
                 break;
             case R.id.post_detail_item_avatar:
                 Intent intent2 = new Intent();
-                intent2.putExtra("user", application.getCurrentUser());
+                intent2.putExtra("user", mPost.getAuthor());
                 intent2.setClass(this, UserInfoActivity.class);
                 startActivity(intent2);
         }

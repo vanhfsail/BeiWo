@@ -228,7 +228,7 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
                 new ClearCacheTask().execute();
                 break;
             case R.id.rl_setting_about:
-                //startActivity(new Intent(this, AboutActivity.class));
+                startActivity(new Intent(this, AboutActivity.class));
                 break;
             case R.id.btn_logout:
                 application.logout(false);
