@@ -1,5 +1,6 @@
 #被窝
 ![icon](BeiWo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png "")
+[官网](http://beiwo.vanhfsail.site)
 
 ##介绍
 一个个人练习的社交小应用，躺在被窝里社交。
@@ -70,6 +71,9 @@
 [github](https://github.com/vanhfsail)
 
 [微博](http://weibo.com/vanhfsail)
+
+邮箱
+[vanhfsail@foxmail.com](mailto:vanhfsail@foxmail.com)
 
 ##License
 
