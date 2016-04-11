@@ -4,21 +4,21 @@
 ##介绍
 一个个人练习的社交小应用，躺在被窝里社交。
 ##Screenshot
-<img src="./screenshot/screenshot1.png" width="30%" height="30%">
-<img src="./screenshot/screenshot2.png" width="30%" height="30%">
-<img src="./screenshot/screenshot3.png" width="30%" height="30%">
+<img src="screenshot/screenshot1.png" width="30%" height="30%">
+<img src="screenshot/screenshot2.png" width="30%" height="30%">
+<img src="screenshot/screenshot3.png" width="30%" height="30%">
 
-<img src="./screenshot/screenshot4.png" width="30%" height="30%">
-<img src="./screenshot/screenshot5.png" width="30%" height="30%">
-<img src="./screenshot/screenshot6.png" width="30%" height="30%">
+<img src="screenshot/screenshot4.png" width="30%" height="30%">
+<img src="screenshot/screenshot5.png" width="30%" height="30%">
+<img src="screenshot/screenshot6.png" width="30%" height="30%">
 
-<img src="./screenshot/screenshot7.png" width="30%" height="30%">
-<img src="./screenshot/screenshot8.png" width="30%" height="30%">
-<img src="./screenshot/screenshot9.png" width="30%" height="30%">
+<img src="screenshot/screenshot7.png" width="30%" height="30%">
+<img src="screenshot/screenshot8.png" width="30%" height="30%">
+<img src="screenshot/screenshot9.png" width="30%" height="30%">
 
-<img src="./screenshot/screenshot10.png" width="30%" height="30%">
-<img src="./screenshot/screenshot11.png" width="30%" height="30%">
-<img src="./screenshot/screenshot12.png" width="30%" height="30%">
+<img src="screenshot/screenshot10.png" width="30%" height="30%">
+<img src="screenshot/screenshot11.png" width="30%" height="30%">
+<img src="screenshot/screenshot12.png" width="30%" height="30%">
 
 ## 待完成功能
 * 评论点赞的消息推送
