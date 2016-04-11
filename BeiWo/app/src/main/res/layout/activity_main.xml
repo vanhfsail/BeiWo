@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/content_back">
+
+        <include
+            layout="@layout/common_title_bar" />
+        <widget.RefreshLayout
+            android:id="@+id/swiperefreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/common_title_bar">
+            <ListView
+                android:id="@+id/home_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="2dp"
+                android:divider="@color/background"/>
+        </widget.RefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/main_progress"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/background"
+        android:clickable="true">
+
+        <LinearLayout
+            android:id="@+id/left_menu_user_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/content_back"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:id="@+id/left_menu_avatar_zone"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:gravity="center_horizontal"
+                android:background="@color/content_back">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/left_menu_avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/user_logo_default"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/left_menu_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/content_back"
+                android:paddingTop="25dp"
+                android:text="颜艺学长"
+                android:textColor="@color/gray"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/left_menu_see_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/content_back"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="查看资料"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/left_menu_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/left_menu_user_zone"
+            android:background="@drawable/left_menu_btn_selector"
+            android:clickable="true"
+            android:paddingTop="25dp"
+            android:text="主页"
+            android:textColor="@color/text_black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/left_menu_message"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_below="@id/left_menu_home"-->
+            <!--android:background="@drawable/left_menu_btn_selector"-->
+            <!--android:clickable="true"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="消息"-->
+            <!--android:textColor="@color/gray"-->
+            <!--android:textSize="24sp"-->
+            <!--android:textStyle="bold" />-->
+
+
+        <TextView
+            android:id="@+id/left_menu_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/left_menu_btn_selector"
+            android:clickable="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="设置"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="+86"
+            android:textColor="@color/text_hard_gray"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <EditText
+            android:id="@+id/et_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="输入手机号"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hard_gray"
+            android:textColorHint="@color/gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/et_verification_code"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_edit_text"
+            android:hint="请输入验证码"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/gray"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_count_down_timer"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gray_round_white_filled_btn_selector"
+            android:gravity="center"
+            android:text="发送验证码"
+            android:textColor="@color/text_hard_gray"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_register_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="请设置密码"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/gray"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_onekey_register"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/gray_round_white_filled_btn_selector"
+        android:text="一键注册"
+        android:textColor="@color/text_hard_gray"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_accept_agreement"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/square_checkbox_selector"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/read_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:text="阅读并同意《用户协议》"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

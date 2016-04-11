@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_info_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_bar_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_bar_left"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_arrow_left"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="被窩"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"/>
+
+    <RelativeLayout
+        android:id="@+id/user_info_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/user_info_follow_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/unfollow_btn_back"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="关注"
+            android:textSize="10sp"
+            android:textColor="@color/pretty_green"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

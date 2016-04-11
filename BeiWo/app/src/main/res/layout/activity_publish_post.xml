@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/common_title_bar"/>
+
+    <EditText
+        android:id="@+id/publish_post_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_title_bar"
+        android:paddingLeft="14dp"
+        android:paddingTop="8dp"
+        android:background="@null"
+        android:minLines="5"
+        android:maxLines="10"
+        android:maxLength="140"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:hint="请输入内容"
+        android:textColorHint="@color/text_light_gray"
+        android:textSize="14sp"
+        android:textColor="@color/text_hard_gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/publish_post_content"
+        android:background="@color/gray"/>
+    
+    <RelativeLayout
+        android:id="@+id/publish_post_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publish_post_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/publish_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="250dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/splash_background"/>
+        <ImageView
+            android:id="@+id/publish_delete_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:src="@mipmap/icon_cancel"
+            android:background="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/publish_add_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginLeft="14dp"
+                android:src="@mipmap/icon_camera"
+                android:background="@color/transparent"/>
+            <ImageView
+                android:id="@+id/publish_add_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginLeft="14dp"
+                android:src="@mipmap/icon_picture"
+                android:background="@color/transparent"/>
+
+            <TextView
+                android:id="@+id/publish_word_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:gravity="right"
+                android:textColor="@color/text_light_gray"
+                android:textSize="12sp"
+                android:text="140"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
