@@ -21,6 +21,9 @@
 <img src="screenshot/screenshot11.jpg" width="30%" height="30%">
 <img src="screenshot/screenshot12.jpg" width="30%" height="30%">
 
+```
+因为要开始写毕设论文和找工作，所以还有很多功能想做的都得之后再做了
+```
 ## 待完成功能
 * 评论点赞的消息推送
 * 自动更新功能
